@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import { useEffect } from "react";
 import Contect from "@/components/Contect";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -10,14 +11,12 @@ import Skip from "@/components/Skip";
 
 import lenis from "@/utils/lenis";
 import link from "@/utils/link";
-import { useEffect } from "react";
 
-export default function page() {
-
-  useEffect(()=>{
+export default function Page() {
+  useEffect(() => {
     lenis();
     link();
-  },[]);
+  }, []);
 
   return (
     <>
@@ -30,5 +29,5 @@ export default function page() {
       <Contect />
       <Footer />
     </>
-  )
+  );
 }
