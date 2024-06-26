@@ -1,3 +1,5 @@
+import "@/assets/scss/style.scss";
+
 export const metadata = {
   title: "Next.js 사용",
   description: "Next.js를 이용해 보자!",
